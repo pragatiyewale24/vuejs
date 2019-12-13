@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <p>{{ message }}</p>
+            <button v-once >{{ message }}</button>
+            <p>v-model is used for two way binding</p>
+            <input v-model="message">::<p>{{ message }}</p>
+            <p>Using v-html directive: <span style="color:red">{{message}}</span></p>
+            <a href="https://www.google.com/"> Click here</a><br>
+            <button v-on:click="counter += 1">Add 1</button>
+            <p>The button above has been clicked {{ counter }} times.</p>
+        </div>
+            
+        <script src="index.js"></script>
+    </body>
+</html>

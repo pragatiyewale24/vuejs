@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+    	<div id="app">
+    		Edit single line of code<input v-model="message" placeholder="edit me"><br><br>
+            Edit multiple line of code<textarea v-model="message" placeholder="add multiple lines"></textarea><br><br>
+            <input type="checkbox" id="checkbox" v-model="checked">
+            <label for="checkbox">{{ checked }}</label><br><br>
+            <input type="radio" id="one" value="One" v-model="picked">
+            <label for="one">One</label>
+            <br>
+            <input type="radio" id="two" value="Two" v-model="picked">
+            <label for="two">Two</label>
+            <br>
+            <span>Picked: {{ picked }}</span><br><br>
+            select option with value 
+            <select v-model="selected">
+                <option disabled value="">Please select one</option>
+                <option>A</option>   
+                <option>B</option>
+                <option>C</option>
+            </select>
+            <span>Selected: {{ selected }}</span><br><br>
+            select option without value but with multiple  
+            <select v-model="selected" multiple>
+                <option disabled >Please select one</option>
+                <option>A</option>   
+                <option>B</option>
+                <option>C</option>
+            </select>
+            <span>Selected: {{ selected }}</span>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

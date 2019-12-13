@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+    	<div id="app">
+    		Enter Age:<input v-model.number = "age" type = "number"><br/>
+            Enter Message:<input v-model.lazy = "msg"><br>
+            Display Message : {{msg}}<br>
+            Enter Message :<input v-model.trim = "message"><br>
+            Display Message : {{message}}
+            </div>
+        <script src="index.js"></script>
+    </body>
+</html>

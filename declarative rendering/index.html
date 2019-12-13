@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+    	<div id="app">
+    		{{ message }}<br>
+    		<span v-bind:title="message1">
+    			Hover your mouse over me for a few seconds
+    			to see my dynamically bound title!
+  			</span><br>
+            <span :title="message1">
+                Title using shorthand v-bind
+            </span><br><br>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

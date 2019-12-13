@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <p>{{ message }}</p>
+            <button v-on:click="reverseMessage">Reverse Message</button>
+            <p>v-model is used for two way binding</p>
+            <input v-model="message">::<p>{{ message }}</p>
+            method return Using Shorthand
+            <button @click="reverseMessage">Reverse Message</button><br>
+            Methods in inline handler
+            <button v-on:click="say('hi')">Say hi</button><br>
+            You can pass it into a method using the special $event variable:
+            <button v-on:click="warn('Form cannot be submitted yet.', $event)">
+            Submit
+</button>
+        </div>
+            
+        <script src="index.js"></script>
+    </body>
+</html>

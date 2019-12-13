@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <span v-if="seen">Now we are in if</span>
+            <span v-else="seen">Now we are in else</span>
+            <ul>
+                <li v-for="todo in todos" v-bind:key="todo.key">
+                    <transition>
+                        <span :key="todo.key">{{ todo.key }}</span>
+                    </transition>
+                </li>
+            </ul>
+        </div>
+            
+        <script src="maintaining_state_Key.js"></script>
+    </body>
+</html>

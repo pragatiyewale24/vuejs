@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+    	<div id="app">
+    		<input type="radio" id="one" value="One" v-model="picked">
+            <label for="one">One</label>
+            <br>
+            <input type="radio" id="two" value="Two" v-model="picked">
+            <label for="two">Two</label>
+            <br>
+            <input type="radio" v-model="picked"  value="one">We set the value to picked model is one <br><br>
+            <input type="checkbox" v-model="checked">{{checked}}<br><br>
+            <select v-model = "languages">
+            <option disabled value = "">Please select one</option>
+            <option>Java</option>
+            <option>Javascript</option>
+            <option>Php</option>
+            <option>C</option>
+            <option>C++</option>
+         </select>
+         Languages Selected is : {{ languages }}<br><br>
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

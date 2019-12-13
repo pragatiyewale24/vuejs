@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <form @submit.prevent="handleSubmit">
+                <input type="text" placeholder="Name" />
+                <button>submit</button><br><br>
+                <button @click.stop="alert('Hello')">.Stop  event modifier which propogate to its parent</button><br><br>
+                <button @click.once="handleClick">.once event modifier is called</button><br><br>
+                <button @click.self="handleClick">.self event modifier is called</button>
+            </form>
+           
+        </div>
+       <script src="index.js"></script>
+    </body>
+</html>

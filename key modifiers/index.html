@@ -1,0 +1,17 @@
+<html>
+    <head>
+       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <form >
+                <input placeholder="name" />
+                <!--submits the form when a enter key goes up -->
+                <input placeholder="password" v-on:keyup.enter="login" >
+                <button>Login</button>
+            </form>
+        </div>
+       <script src="index.js"></script>
+    </body>
+</html>
